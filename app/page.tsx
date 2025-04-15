@@ -14,6 +14,7 @@ export default function LeadSuiteLanding() {
     <main className="min-h-screen bg-[#0B121A] text-white px-6 py-12 font-sans">
       <section className="max-w-5xl mx-auto text-center mb-20" data-aos="fade-up">
         <div className="flex justify-center mb-6">
+          <header className="w-full flex items-center px-6 py-4 fixed top-0 left-0 z-50 bg-transparent">
           <Image
             src="/logo.png"
             alt="LeadSuite Logo"
