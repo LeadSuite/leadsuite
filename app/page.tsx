@@ -58,24 +58,6 @@ export default function LeadSuiteLanding() {
         </div>
       </section>
 
-      {/* Demo CTA Section */}
-      <section className="bg-[#111820] py-16" data-aos="zoom-in">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Request a Free Demo</h2>
-          <p className="text-gray-400 mb-6">Drop your email below and we’ll reach out with a custom audit and example chatbot live on your site.</p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
-            <input
-              type="email"
-              placeholder="Your business email"
-              className="px-4 py-2 text-black rounded-xl w-full max-w-xs"
-            />
-            <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl hover:from-blue-600 hover:to-blue-800 transition">
-              Submit
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="max-w-5xl mx-auto my-24 text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-12">What Our Clients Say</h2>
