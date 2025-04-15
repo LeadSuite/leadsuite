@@ -19,7 +19,7 @@ export default function LeadSuiteLanding() {
         alt="LeadSuite Logo"
         width={300}
         height={300}
-        className="w-auto h-10"
+        className="w-auto h-100"
       />
     </header>
 
