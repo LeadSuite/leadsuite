@@ -36,7 +36,12 @@ export default function LeadSuiteLanding() {
       </p>
       <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg px-6 py-3 rounded-xl hover:from-blue-600 hover:to-blue-800 transition">
         Book a Free Demo
-      </button>
+      <a
+  href="/book-demo"
+  className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg px-6 py-3 rounded-xl hover:from-blue-600 hover:to-blue-800 transition"
+>
+  Book a Free Demo
+</a>
     </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
