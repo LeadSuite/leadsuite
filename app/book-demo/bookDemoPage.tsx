@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function BookDemo() {
   const [submitted, setSubmitted] = useState(false);
@@ -20,7 +22,18 @@ export default function BookDemo() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0B121A] text-white px-6 py-12 font-sans flex flex-col items-center justify-center">
+    <main className="min-h-screen bg-[#0B121A] text-white px-6 py-12 font-sans flex flex-col items-center justify-center relative">
+      {/* Logo Button */}
+      <Link href="/" className="absolute top-4 left-4">
+        <Image
+          src="/logo.png"
+          alt="LeadSuite Logo"
+          width={120}
+          height={50}
+          className="cursor-pointer"
+        />
+      </Link>
+
       <h1 className="text-4xl font-bold mb-4 text-center">Book a Free Demo</h1>
       <p className="text-white text-center mb-8 max-w-md">
         Fill out the form below and we’ll get back to you with a personalized demo and audit.
