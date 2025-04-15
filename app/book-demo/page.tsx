@@ -13,7 +13,7 @@ export default function BookDemo() {
   return (
     <main className="min-h-screen bg-[#0B121A] text-white px-6 py-12 font-sans flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-4 text-center">Book a Free Demo</h1>
-      <p className="text-gray-400 text-center mb-8 max-w-md">
+      <p className="text-white text-center mb-8 max-w-md">
         Fill out the form below and we’ll get back to you with a personalized demo and audit.
       </p>
 
@@ -26,18 +26,18 @@ export default function BookDemo() {
             type="text"
             placeholder="Your Name"
             required
-            className="w-full px-4 py-2 rounded-xl text-black"
+            className="w-full px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-300"
           />
           <input
             type="email"
             placeholder="Your Email"
             required
-            className="w-full px-4 py-2 rounded-xl text-black"
+            className="w-full px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-300"
           />
           <input
             type="text"
             placeholder="Company Website (optional)"
-            className="w-full px-4 py-2 rounded-xl text-black"
+            className="w-full px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-300"
           />
           <button
             type="submit"
