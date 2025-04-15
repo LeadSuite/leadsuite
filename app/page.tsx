@@ -12,7 +12,7 @@ export default function LeadSuiteLanding() {
 
   return (
     <main className="min-h-screen bg-[#0B121A] text-white font-sans">
-      {/* Header with top-left logo  megaknight */}
+      {/* Header with top-left logo  evoknight */}
       <header className="w-full flex items-center px-6 py-4 fixed top-0 left-0 z-50 bg-transparent">
         <Image
           src="/logo.png"
