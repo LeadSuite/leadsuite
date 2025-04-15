@@ -17,8 +17,8 @@ export default function LeadSuiteLanding() {
           <Image
             src="/logo.png"
             alt="LeadSuite Logo"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
           />
         </div>
         <h1 className="text-5xl font-bold tracking-tight mb-4">
