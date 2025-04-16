@@ -49,7 +49,7 @@ export default function LeadSuiteLanding() {
           <p className="text-gray-400">Our advanced scraping methods of major databases provide you with lead lists that continuously update, providing increasing value to your client acquisition process.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbot Integration</h3>
+          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbot Website Integration</h3>
           <p className="text-gray-400">Intelligent, 24/7 client assistants trained on your business.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
@@ -62,37 +62,27 @@ export default function LeadSuiteLanding() {
 
       {/* Pricing */}
       <section className="bg-[#111820] py-20 text-center" data-aos="fade-up">
-        <h2 className="text-3xl font-bold mb-8">Pricing Plans</h2>
+        <h2 className="text-3xl font-bold mb-8">Our Services</h2>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <div className="bg-[#121A24] p-8 rounded-2xl">
             <h3 className="text-xl font-semibold mb-2">Starter</h3>
-            <p className="text-3xl font-bold text-blue-400 mb-4">$500 + $99/mo</p>
+            <p className="text-3xl font-bold text-blue-400 mb-4">$15/mo</p>
             <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ AI Chatbot</li>
-              <li>✓ Email Capture</li>
-              <li>✓ Basic Reporting</li>
+              <li>✓ Fully Custom AI Chatbot For Your Website</li>
+              <li>✓ Client Email + SMS Capture</li>
+              <li>✓ 24/7 Client Assistant For Any Language</li>
+              <li>✓ Machine-Trained Around Your Business</li>
             </ul>
             <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Start Now</button>
           </div>
           <div className="bg-[#121A24] p-8 rounded-2xl border-2 border-blue-500">
-            <h3 className="text-xl font-semibold mb-2">Growth</h3>
-            <p className="text-3xl font-bold text-blue-400 mb-4">$1,500 + $199/mo</p>
+            <h3 className="text-xl font-semibold mb-2">Client Lead Database Access, Tailored For Your Industry And Region</h3>
+            <p className="text-3xl font-bold text-blue-400 mb-4">$300/mo</p>
             <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ Smart Chatbot</li>
-              <li>✓ SMS + Email Flows</li>
-              <li>✓ CRM Integration</li>
+              <li>✓ Weekly Updated List of Thousands of Potential Clients With Vetted Interest in Your Service </li>
+              <li>✓ Free Cancel Anytime</li>
             </ul>
-            <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Get Started</button>
-          </div>
-          <div className="bg-[#121A24] p-8 rounded-2xl">
-            <h3 className="text-xl font-semibold mb-2">Pro</h3>
-            <p className="text-3xl font-bold text-blue-400 mb-4">$3,000 + $399/mo</p>
-            <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ Fully Custom AI</li>
-              <li>✓ Live Chat Handoff</li>
-              <li>✓ All Integrations</li>
-            </ul>
-            <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Go Pro</button>
+            <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Start Now</button>
           </div>
         </div>
       </section>
