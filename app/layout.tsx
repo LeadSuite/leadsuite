@@ -20,6 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Favicon - JPEG version */}
+        <link rel="icon" href="/favicon.jpeg" type="image/jpeg" />
+      </head>
       <body className="bg-[#0B121A] text-white font-sans">
         {children}
 
@@ -44,7 +48,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   const script = document.createElement("script");
                   script.src = "https://www.chatbase.co/embed.min.js";
                   script.id = "8PxCTobzpQtc48GZJgz0q";
-                  script.domain = "www.chatbase.co";
                   document.body.appendChild(script);
                 };
                 if (document.readyState === "complete") {
