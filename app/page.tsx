@@ -89,7 +89,7 @@ export default function LeadSuiteLanding() {
       </section>
       <section className="bg-[#121A24] py-16 px-6" data-aos="fade-up">
   <div className="max-w-xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+    <h2 className="text-3xl font-bold mb-4 text-white">Let's Work Together</h2>
     <p className="text-gray-400 mb-6">
       
       (786) 838-3470
