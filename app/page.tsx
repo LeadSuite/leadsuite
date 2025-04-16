@@ -105,7 +105,7 @@ export default function LeadSuiteLanding() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 mt-16">
-        © 2025 LeadSuite. Built with AI. Powered by results.
+        © 2025 LeadSuite. Built for you. Powered by results.
       </footer>
     </main>
   );
