@@ -68,18 +68,19 @@ export default function LeadSuiteLanding() {
             <h3 className="text-xl font-semibold mb-2">Starter</h3>
             <p className="text-3xl font-bold text-blue-400 mb-4">$15/mo</p>
             <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ Fully Custom AI Chatbot For Your Website</li>
+              <li>✓ Fully Custom AI Chatbot For Your Website; Any Language</li>
               <li>✓ Client Email + SMS Capture</li>
-              <li>✓ 24/7 Client Assistant For Any Language</li>
-              <li>✓ Machine-Trained Around Your Business</li>
+              <li>✓ 24/7 Assistant, Trained Around Your Business</li>
+              <li>✓ Free Cancel Anytime</li>
             </ul>
             <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Start Now</button>
           </div>
           <div className="bg-[#121A24] p-8 rounded-2xl border-2 border-blue-500">
-            <h3 className="text-xl font-semibold mb-2">Client Lead Database Access, Tailored For Your Industry And Region</h3>
+            <h3 className="text-xl font-semibold mb-2">Client Lead Database Access</h3>
             <p className="text-3xl font-bold text-blue-400 mb-4">$300/mo</p>
             <ul className="text-gray-400 space-y-2 mb-6">
               <li>✓ Weekly Updated List of Thousands of Potential Clients With Vetted Interest in Your Service </li>
+              <li>✓ Tailored For Your Industry And Region</li>
               <li>✓ Free Cancel Anytime</li>
             </ul>
             <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-2 rounded-xl text-white">Start Now</button>
