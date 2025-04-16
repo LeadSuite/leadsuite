@@ -32,7 +32,7 @@ export default function LeadSuiteLanding() {
           Meet <span className="text-blue-400">LeadSuite</span>
         </h1>
         <p className="text-xl text-gray-400 mb-6">
-          AI-powered lead generation and smart chat automation — installed on your site in 48 hours.
+          Lead generation and smart chat integration — installed on your site in 48 hours.
         </p>
         <a
           href="/book-demo"
@@ -45,12 +45,12 @@ export default function LeadSuiteLanding() {
       {/* Features Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbots</h3>
-          <p className="text-gray-400">Capture leads with intelligent, 24/7 website assistants trained on your business.</p>
+          <h3 className="text-2xl font-semibold mb-2 text-white">Lead Databases</h3>
+          <p className="text-gray-400">Our advanced scraping methods of major databases provide you with lead lists that continuously update, providing increasing value to your client acquisition process.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <h3 className="text-2xl font-semibold mb-2 text-white">Instant Integrations</h3>
-          <p className="text-gray-400">Sync with your CRM, email tools, or Slack instantly — no dev needed.</p>
+          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbot Integrations</h3>
+          <p className="text-gray-400">Intelligent, 24/7 client assistants trained on your business.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
           <h3 className="text-2xl font-semibold mb-2 text-white">48-Hour Setup</h3>
