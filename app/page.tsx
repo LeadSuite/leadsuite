@@ -49,7 +49,7 @@ export default function LeadSuiteLanding() {
           <p className="text-gray-400">Our advanced scraping methods of major databases provide you with lead lists that continuously update, providing increasing value to your client acquisition process.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbot Integrations</h3>
+          <h3 className="text-2xl font-semibold mb-2 text-white">Smart Chatbot Integration</h3>
           <p className="text-gray-400">Intelligent, 24/7 client assistants trained on your business.</p>
         </div>
         <div className="bg-[#121A24] p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
@@ -58,24 +58,7 @@ export default function LeadSuiteLanding() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="max-w-5xl mx-auto my-24 text-center" data-aos="fade-up">
-        <h2 className="text-3xl font-bold mb-12">What Our Clients Say</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-[#121A24] p-6 rounded-2xl shadow-md">
-            <p className="text-gray-300 italic">"LeadSuite doubled our conversion rate in less than a week. Absolutely worth every penny."</p>
-            <p className="mt-4 font-semibold text-blue-400">— Maya, Ecomm Store Owner</p>
-          </div>
-          <div className="bg-[#121A24] p-6 rounded-2xl shadow-md">
-            <p className="text-gray-300 italic">"Setup was fast and seamless. Now we never miss a lead even after hours."</p>
-            <p className="mt-4 font-semibold text-blue-400">— Jordan, SaaS Founder</p>
-          </div>
-          <div className="bg-[#121A24] p-6 rounded-2xl shadow-md">
-            <p className="text-gray-300 italic">"The chatbot is smarter than some of our reps — and doesn’t take lunch breaks!"</p>
-            <p className="mt-4 font-semibold text-blue-400">— Chris, Agency CEO</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Pricing */}
       <section className="bg-[#111820] py-20 text-center" data-aos="fade-up">
