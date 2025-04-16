@@ -87,6 +87,20 @@ export default function LeadSuiteLanding() {
           </div>
         </div>
       </section>
+      <section className="bg-[#121A24] py-16 px-6" data-aos="fade-up">
+  <div className="max-w-xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+    <p className="text-gray-400 mb-6">
+      Have questions, ideas, or want to work together? Reach out — we’d love to talk.
+    </p>
+    <a
+      href="mailto:leadsuiteservice@gmail.com"
+      className="text-blue-400 underline hover:text-blue-500 transition text-lg"
+    >
+      leadsuiteservice@gmail.com
+    </a>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 mt-16">
