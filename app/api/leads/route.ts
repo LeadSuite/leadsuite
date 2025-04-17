@@ -25,7 +25,7 @@ export async function POST(req: Request) {
 export async function GET() {
   try {
     const client = await clientPromise;
-    const db = client.db("leadsuite");
+    const db = client.db("leadstream");
 
     const leads = await db.collection("leads")
       .find({})
