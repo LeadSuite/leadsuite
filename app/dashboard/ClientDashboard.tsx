@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 interface Lead {
   name?: string;
@@ -18,7 +18,10 @@ interface Lead {
 }
 
 export default function ClientDashboard() {
-  const { data: session, status } = useSession();
+  const sessionData = useSession();
+  const session = sessionData?.data;
+  const status = sessionData?.status;
+
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -29,10 +32,8 @@ export default function ClientDashboard() {
         const data = await res.json();
 
         if (session?.user?.email) {
-          const userLeads = data.filter((lead: Lead) => session?.user?.email && lead.userEmail === session.user.email);
+          const userLeads = data.filter((lead: Lead) => lead.userEmail === session?.user?.email);
           setLeads(userLeads);
-        } else {
-          setLeads([]);
         }
       } catch (err) {
         console.error("Failed to fetch leads", err);
@@ -41,10 +42,10 @@ export default function ClientDashboard() {
       }
     };
 
-    if (status === "authenticated") {
+    if (session?.user?.email) {
       fetchLeads();
     }
-  }, [session, status]);
+  }, [session]);
 
   if (status === "loading") return <p className="text-center text-white">🔄 Loading session...</p>;
 
