@@ -29,7 +29,7 @@ export default function ClientDashboard() {
         const data = await res.json();
 
         if (session?.user?.email) {
-          const userLeads = data.filter((lead: Lead) => lead.userEmail === session?.user?.email);
+          const userLeads = data.filter((lead: Lead) => session?.user?.email && lead.userEmail === session.user.email);
           setLeads(userLeads);
         } else {
           setLeads([]);
@@ -63,7 +63,9 @@ export default function ClientDashboard() {
       </div>
 
       {!session ? (
-        <p className="text-center text-red-500 mt-16">❌ Please sign in to view your dashboard.</p>
+        <p className="text-center text-red-500 mt-16">
+          ❌ Please sign in to view your dashboard.
+        </p>
       ) : (
         <>
           <h1 className="text-4xl font-bold mb-6 text-center">📊 Your LeadStream Dashboard</h1>
