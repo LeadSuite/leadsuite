@@ -3,7 +3,7 @@ import GitHubProvider from "next-auth/providers/github";
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import clientPromise from "@/lib/mongodb";
 
-export const authOptions = {
+const handler = NextAuth({
   providers: [
     GitHubProvider({
       clientId: process.env.GITHUB_ID!,
@@ -12,8 +12,12 @@ export const authOptions = {
   ],
   adapter: MongoDBAdapter(clientPromise),
   secret: process.env.NEXTAUTH_SECRET,
-};
-
-const handler = NextAuth(authOptions);
+  session: {
+    strategy: "jwt",
+  },
+  pages: {
+    signIn: "/signin", // optional: custom sign-in page
+  },
+});
 
 export { handler as GET, handler as POST };
