@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers"; // Step 2: Import SessionProvider wrapper
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,20 +13,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "LeadSuite",
   description: "AI-powered lead generation and chat automation",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
-        {/* Favicon - JPEG version */}
         <link rel="icon" href="/favicon.jpeg" type="image/jpeg" />
       </head>
-      <body className="bg-[#0B121A] text-white font-sans">
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0B121A] text-white font-sans`}>
+        <Providers>
+          {children}
+        </Providers>
 
         {/* Chatbase Bot Integration */}
         <script
