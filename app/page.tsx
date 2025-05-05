@@ -12,8 +12,8 @@ export default function LeadSuiteLanding() {
 
   return (
     <main className="min-h-screen bg-[#0B121A] text-white font-sans">
-      {/* Header with top-left logo  hogridger */}
-      <header className="w-full flex items-center px-6 py-4 fixed top-0 left-0 z-50 bg-transparent">
+      {/* Header with logo and sign-in button */}
+      <header className="w-full flex justify-between items-center px-6 py-4 fixed top-0 left-0 z-50 bg-transparent">
         <Image
           src="/logo.png"
           alt="LeadSuite Logo"
@@ -21,6 +21,12 @@ export default function LeadSuiteLanding() {
           height={100}
           className="w-auto h-[100px]"
         />
+        <a
+          href="/signin"
+          className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-lg transition"
+        >
+          Sign In
+        </a>
       </header>
 
       {/* Spacer to push content below fixed header */}
@@ -58,8 +64,6 @@ export default function LeadSuiteLanding() {
         </div>
       </section>
 
-
-
       {/* Pricing */}
       <section className="bg-[#111820] py-20 text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-8">Our Services</h2>
@@ -87,21 +91,20 @@ export default function LeadSuiteLanding() {
           </div>
         </div>
       </section>
+
+      {/* Contact */}
       <section className="bg-[#121A24] py-16 px-6" data-aos="fade-up">
-  <div className="max-w-xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-4 text-white">Let's Work Together</h2>
-    <p className="text-gray-400 mb-6">
-      
-      (786) 838-3470
-    </p>
-    <a
-      href="mailto:leadsuiteservice@gmail.com"
-      className="text-blue-400 underline hover:text-blue-500 transition text-lg"
-    >
-      leadsuiteservice@gmail.com
-    </a>
-  </div>
-</section>
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4 text-white">Let's Work Together</h2>
+          <p className="text-gray-400 mb-6">(786) 838-3470</p>
+          <a
+            href="mailto:leadsuiteservice@gmail.com"
+            className="text-blue-400 underline hover:text-blue-500 transition text-lg"
+          >
+            leadsuiteservice@gmail.com
+          </a>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 mt-16">
