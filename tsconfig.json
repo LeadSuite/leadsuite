@@ -13,16 +13,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./leadsuite",              // ✅ Set correct base
+    "paths": {
+      "@/*": ["./*"]                        // ✅ Alias maps to leadsuite/*
+    },
     "typeRoots": ["./types", "./node_modules/@types"],
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["leadsuite", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
