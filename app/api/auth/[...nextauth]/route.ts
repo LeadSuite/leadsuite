@@ -10,33 +10,37 @@ const handler = NextAuth({
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        email: { label: "Email", type: "text" },
-        password: { label: "Password", type: "password" }
+        email: { label: "Email", type: "email", placeholder: "your@email.com" },
+        password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
+        if (!credentials?.email || !credentials?.password) return null;
+
         const client = await clientPromise;
-        const user = await client.db().collection("users").findOne({ email: credentials?.email });
+        const user = await client
+          .db()
+          .collection("users")
+          .findOne({ email: credentials.email });
 
         if (!user || !user.hashedPassword) return null;
 
-        if (!credentials) return null;
         const isValid = await compare(credentials.password, user.hashedPassword);
         if (!isValid) return null;
 
         return {
           id: user._id.toString(),
           name: user.name || user.email,
-          email: user.email
+          email: user.email,
         };
-      }
-    })
+      },
+    }),
   ],
   session: {
     strategy: "jwt",
   },
   pages: {
-    signIn: "/signin", // custom sign-in page
-    newUser: "/signup", // optional
+    signIn: "/signin",
+    newUser: "/signup", // You can implement this next
   },
   secret: process.env.NEXTAUTH_SECRET,
 });

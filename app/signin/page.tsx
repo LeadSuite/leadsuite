@@ -44,3 +44,6 @@ export default function SignInPage() {
     </main>
   );
 }
+<p className="text-center text-sm mt-4">
+  Don't have an account? <a href="/signup" className="text-blue-400 underline">Sign up</a>
+</p>
